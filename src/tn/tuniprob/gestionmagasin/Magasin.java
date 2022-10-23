@@ -154,6 +154,18 @@ public class Magasin {
         }
     }
     
+    
+    public float calculStockFruit() {
+	float stock=0;
+	for (int i = 0; i < this.capacit; i++) {
+		if (produit[i].determinerTypeProduit().equalsIgnoreCase("Fruit"))
+			stock= (float) (stock+((ProduitFruit)produit[i]).getQuantite());
+		
+	}
+	return stock;
+	
+}
+    
         
     }
 

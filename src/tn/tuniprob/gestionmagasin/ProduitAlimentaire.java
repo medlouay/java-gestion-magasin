@@ -24,6 +24,14 @@ public class ProduitAlimentaire {
     
     
     public ProduitAlimentaire(){}
+
+    public ProduitAlimentaire(int id, String libelle) {
+        this.id = id;
+        this.libelle = libelle;
+    }
+
+    
+    
     
     public ProduitAlimentaire(int id, String libelle,String marque){
     this.id=id;
@@ -132,7 +140,16 @@ public class ProduitAlimentaire {
    
     
     
-   
+   public String determinerTypeProduit(){
+	if (this instanceof ProduitLegume) {
+		return "Legume";
+	}if (this instanceof ProduitFruit) {
+	return "Fruit";
+	}
+	return "autre" ; 
+		
+		
+	}
    
     
     

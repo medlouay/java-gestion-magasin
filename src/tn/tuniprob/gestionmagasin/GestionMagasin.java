@@ -47,7 +47,7 @@ public class GestionMagasin {
         
         c1.afficher();
         
-        ProduitAlimentaire prod1 =new ProduitAlimentaire(1021,"lait","Delice");
+        /*ProduitAlimentaire prod1 =new ProduitAlimentaire(1021,"lait","Delice");
         ProduitAlimentaire prod2 =new ProduitAlimentaire(2510,"Yaourt","Vitalait");
         ProduitAlimentaire prod3 =new ProduitAlimentaire(3250,"Tomate","Sicam",1.200);
         
@@ -56,7 +56,7 @@ public class GestionMagasin {
         m1.ajouterProduit(prod2);
         
         m2.ajouterProduit(prod1);
-        m2.ajouterProduit(prod2);
+        m2.ajouterProduit(prod2);*/
         
         m1.afficherMagasin();
         m2.afficherMagasin();
@@ -65,6 +65,29 @@ public class GestionMagasin {
         v1.Salaire();
         c1.Salaire();
         r1.Salaire();
+        
+        
+        ProduitAlimentaire p1 =new ProduitFruit(1254, "Fraise", 12.3, "Mars");
+        ProduitAlimentaire p2 =new ProduitFruit(1224, "Pasteque", 50.0, "Juin");
+        ProduitAlimentaire p3 =new ProduitFruit(7896, "Madanine", 25.6, "Decembre");
+       ProduitAlimentaire A4 = new ProduitLegume(14.0, "Janvier", 8521, "artichauts");
+        
+        m1.ajouterProduit(p1);
+        m1.ajouterProduit(p2);
+        m1.ajouterProduit(p3);
+        m1.ajouterProduit(A4);
+        
+        m2.ajouterProduit(p1); 
+        m2.ajouterProduit(p2);
+        m2.ajouterProduit(p3);
+        m2.ajouterProduit(A4);
+        
+       System.out.println(A4.determinerTypeProduit());
+        
+        
+        
+        
+        
    
        
     }
