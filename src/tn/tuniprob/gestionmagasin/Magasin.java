@@ -29,7 +29,7 @@ public class Magasin {
     this.adresse=adresse;
     this.capacit=0;
     this.employeCapacit =0;
-    this.produit = new ProduitAlimentaire[50];
+    this.produit = new ProduitAlimentaire[2];
     this.employe = new Employe[20];
     }
     
@@ -47,11 +47,12 @@ public class Magasin {
     public void ajouterProduit(ProduitAlimentaire p){
         if(this.recherche(p)){
             System.out.println("exist");
-            }else{
-                  if (this.capacit<50){ 
+            }else{ 
+            try{
             this.produit[this.capacit]= p;
-            this.capacit++;}
-        System.out.println("magasin plein");}
+            this.capacit++;
+            }catch(ArrayIndexOutOfBoundsException e){System.out.println(e);}
+        }
             
             
             

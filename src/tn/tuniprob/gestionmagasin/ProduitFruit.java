@@ -13,6 +13,11 @@ public class ProduitFruit extends ProduitAgricole {
     public ProduitFruit(int id, String libelle,double quantite, String saison ) {
         super(quantite, saison, id, libelle);
     }
+
+    @Override
+    public boolean estFrais(String saison) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
   
     

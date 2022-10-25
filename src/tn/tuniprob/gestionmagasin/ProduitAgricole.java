@@ -10,7 +10,7 @@ import java.time.LocalDate;
  *
  * @author Lou
  */
-public class ProduitAgricole extends ProduitAlimentaire {
+public abstract class ProduitAgricole extends ProduitAlimentaire implements Critere{
    public double quantite;
    public String saison;
 
@@ -35,6 +35,10 @@ public class ProduitAgricole extends ProduitAlimentaire {
     public void setSaison(String saison) {
         this.saison = saison;
     }
+
+    
+    
+    
 
  
    
